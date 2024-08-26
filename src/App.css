@@ -1,0 +1,16 @@
+.curved-underline {
+  position: relative;
+}
+
+.curved-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -15px; /* Adjust this value to move the underline closer or further away */
+  left: -7px; /* Adjust this value to control the horizontal starting point of the curve */
+  height: 10px; /* Height of the underline */
+  width: 100%; /* Width of the underline, covering the full width of the text */
+  z-index: -1; /* Ensures the underline stays behind the text */
+  border: solid 8px #9bffb0; /* Border thickness and color */
+  border-color: #9bffb0 transparent transparent transparent; /* Makes all borders transparent except the bottom one */
+  border-radius: 100%; /* Creates the curvature */
+}
