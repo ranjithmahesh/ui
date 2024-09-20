@@ -58,3 +58,6 @@ ul li {
 }
 
 
+.custom-dropdown .dropdown-toggle::after {
+  color: white !important; /* Changes the color of the caret to red */
+}

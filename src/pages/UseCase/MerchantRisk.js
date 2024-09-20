@@ -100,7 +100,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5  fw-lighter text-white lead"
+                className="mt-5  fw-lighter text-white lead w-100"
                 style={{ width: "500px", fontSize: "22px" }}
               >
                 One Powerful API : Analyze 100+ Risk Signals Across Merchant
@@ -120,7 +120,7 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="">
+          <Col md={6} className="d-none d-md-block">
             <img
               className="d-flex ms-auto pe-5"
               style={{ objectFit: "contain" }}
@@ -209,10 +209,10 @@ const Body = () => {
           Analyze hundreds of risk signals from across the merchants web
           presence in under 30 seconds
         </p>
-        <Row className="mt-5 w-100 ">
+        <Row className="mt-5  ">
           {data.map((item, index) => (
             <Col className=" g-0 " key={index} md={4}>
-              <Card className=" w-75 h-100 text-center border-0  justify-content-evenly">
+              <Card className="  h-100 text-center border-0  justify-content-evenly">
                 <img
                   src={item.img}
                   className="d-block mx-auto"

@@ -5,24 +5,25 @@ import logo from "../assets/Background_Black.png";
 
 const Footer = () => {
   const Links = [
-    "Pricing",
-    "FAQs",
-    "Enterprise Sales",
-    "Categorization API",
-    "Logo API",
-    "Company API",
-    "Import CSV File",
-    "Python SDK",
-    "API Hub",
-    "IP Lookup API",
-    "Blog",
-    "Sitemap",
+    { text: "Pricing", href: "/pricing" },
+    { text: "FAQs", href: "/faqs" },
+    // { text: "Enterprise Sales", href: "/enterprise-sales" },
+    { text: "Categorization API", href: "/api/website-categorization" },
+    { text: "Logo API", href: "/api/logo-api" },
+    { text: "Company API", href: "/api/company-api" },
+    // { text: "Import CSV File", href: "/import-csv-file" },
+    // { text: "Python SDK", href: "/python-sdk" },
+    // { text: "API Hub", href: "/api-hub" },
+    { text: "IP Lookup API", href: "/api/country-risk" },
+    { text: "Blog", href: "/blog" },
+    { text: "Sitemap", href: "/sitemap" },
   ];
+
   const legal = [
-    { name: "Terms & conditions", link: "/terms-and-conditions" },
-    { name: "Privacy policy", link: "/privacy-policy" },
+    { name: "Terms & conditions", link: "https://chargebackzero.com/terms-and-conditions" },
+    { name: "Privacy policy", link: "https://chargebackzero.com/privacy" },
     { name: "Refund policy", link: "/refund-policy" },
-    { name: "Contact Us", link: "/contact-us" },
+    { name: "Contact Us", link: "https://chargebackzero.com/contact-us" },
   ];
 
   return (
@@ -47,8 +48,13 @@ const Footer = () => {
             <h4>Links</h4>
             <ul className="list-unstyled">
               {Links.map((item) => (
-                <li style={{ cursor: "pointer" }} key={item}>
-                  {item}
+                <li style={{ cursor: "pointer" }} key={item.text}>
+                  <Link
+                    to={item.href}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {item.text}
+                  </Link>
                 </li>
               ))}
             </ul>

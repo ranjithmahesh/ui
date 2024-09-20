@@ -23,8 +23,8 @@ function Register() {
         {/* Left Column */}
         <Col md={6} className="text-start">
           <div className="d-flex flex-column align-items-start">
-            <img src={logo} alt="WebClazify Logo" className="mb-4" />
-            <h2 className="fw-bold">WebClazify</h2>
+            <img src={logo} alt="ValidX Logo" className="mb-4" />
+            <h2 className="fw-bold">ValidX</h2>
             <p className="mt-4 fw-medium">Get started with your account</p>
             <p>
               All-in-one domain data source. Get Website Logos, Company Data,

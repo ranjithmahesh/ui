@@ -36,9 +36,9 @@ const Features = () => {
     }]
     return (
         <Container id="features" className="mt-5">
-            <h2 className='text-center text-black'>A Few of WebClazify's Best Features</h2>
+            <h2 className='text-center text-black'>A Few of ValidX's Best Features</h2>
 
-            <Row className='mt-4 w-100'>
+            <Row className='mt-4 w-100 mx-auto'>
                 {data.map((item, index) => (
                     <Col className='g-4' key={index} md={4}>
                         <Card className='shadow-lg border h-100 pt-3' style={{ backgroundColor: "#6642d1" }}>

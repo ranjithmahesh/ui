@@ -92,7 +92,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5 fw-lighter text-white lead"
+                className="mt-5 fw-lighter text-white lead w-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Transforming Raw Data into Actionable Insights for Smarter
@@ -112,9 +112,9 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-flex">
             <img
-              className="d-flex rounded "
+              className="d-flex rounded img-fluid"
               style={{ objectFit: "contain" }}
               src={headerSec}
               alt="Data Enrichment and Analysis Illustration"
@@ -130,12 +130,12 @@ const data = [
   {
     img: logo1,
     title: "Customer Data Enrichment",
-    des: "WebClazify can assist in generating leads by extracting essential content information about potential customers from websites.",
+    des: "ValidX can assist in generating leads by extracting essential content information about potential customers from websites.",
   },
   {
     img: logo2,
     title: "Domains Data Analysis",
-    des: "WebClazify categorizes content from companies and websites based on domain input. This tool automatically classifies the content into various categories, including industry, headquarters location, revenue, company employees range, technology used, similar companies/domains.",
+    des: "ValidX categorizes content from companies and websites based on domain input. This tool automatically classifies the content into various categories, including industry, headquarters location, revenue, company employees range, technology used, similar companies/domains.",
   },
 ];
 
@@ -153,7 +153,7 @@ const Body = () => {
               />
               <div>
                 <h5 className="mt-2">{item.title}</h5>
-                <p style={{ fontSize: "14px" }}>{item.des}</p>
+                <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{item.des}</p>
               </div>
             </Col>
           ))}

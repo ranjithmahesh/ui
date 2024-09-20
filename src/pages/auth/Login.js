@@ -31,7 +31,7 @@ function Login() {
           <div className="text-center">
             <img
               src={logo}
-              alt="WebClazify Logo"
+              alt="ValidX Logo"
               className="mb-4"
               style={{ width: "75px" }}
             />
@@ -39,7 +39,7 @@ function Login() {
 
           <h2 className="fw-bold text-center">Welcome</h2>
           <p className="text-center">
-            Log in to WebClazify AI to continue to your dashboard.
+            Log in to ValidX AI to continue to your dashboard.
           </p>
 
           <Form>

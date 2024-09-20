@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -92,7 +92,7 @@ const FAQs = [
 function Body() {
   return (
     <div className="container">
-      <div className="m-5 w-100" >
+      <div className="m-5 w-100">
         <NavBar />
 
         <h2
@@ -125,6 +125,9 @@ function Body() {
 }
 
 const FAQ = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Body />

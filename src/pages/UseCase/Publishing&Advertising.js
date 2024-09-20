@@ -24,7 +24,7 @@ function Header() {
   return (
     <div
       id="/"
-      className="  container-fluid"
+      className="container-fluid "
       style={{
         background: "linear-gradient(to bottom, #420394, #000000)",
         height: "600px",
@@ -93,7 +93,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5 fw-lighter text-white lead"
+                className="mt-5 fw-lighter text-white lead w-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Ensuring Brand Safety with Smart Content Moderation and Targeted
@@ -113,9 +113,9 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-flex">
             <img
-              className="d-flex ms-auto rounded "
+              className="d-flex ms-auto rounded img-fluid"
               style={{ objectFit: "contain", width: "99%" }}
               src={headerSec}
               alt="Data Enrichment and Analysis Illustration"
@@ -136,12 +136,12 @@ const data = [
   {
     img: logo2,
     title: "Match advertisers and publishers",
-    des: "WebClazify categorizes content from companies and websites, helping advertisers and publishers match effectively by aligning ads with suitable platforms and target audiences.",
+    des: "ValidX categorizes content from companies and websites, helping advertisers and publishers match effectively by aligning ads with suitable platforms and target audiences.",
   },
   {
     img: logo3,
     title: "Brand safety",
-    des: "Advertisers utilize WebClazify to ensure their ads are not displayed on websites that conflict with their brand values or could harm their brand reputation.",
+    des: "Advertisers utilize ValidX to ensure their ads are not displayed on websites that conflict with their brand values or could harm their brand reputation.",
   },
 ];
 
@@ -159,7 +159,7 @@ const Body = () => {
               />
               <div>
                 <h5 className="mt-2">{item.title}</h5>
-                <p style={{ fontSize: "14px" }}>{item.des}</p>
+                <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{item.des}</p>
               </div>
             </Col>
           ))}
@@ -173,7 +173,7 @@ const Body = () => {
             />
             <div>
               <h5 className="mt-2">{data[2].title}</h5>
-              <p style={{ fontSize: "14px" }}>{data[2].des}</p>
+              <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{data[2].des}</p>
             </div>
           </Col>
         </Row>

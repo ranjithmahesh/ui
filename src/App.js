@@ -25,6 +25,7 @@ import Cybersecurity from "./pages/UseCase/Cybersecurity";
 import InternetTelecommunication from "./pages/UseCase/Internet-Telecommunication";
 import Marketing from "./pages/UseCase/Marketing";
 import CalendlyDemo from "./components/CalendlyDemo";
+import Pricing from "./components/Pricing";
 
 function App() {
   return (

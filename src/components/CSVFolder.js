@@ -358,7 +358,7 @@ function CSVFolder() {
             </div>
           </div>{" "}
         </Col>
-        <Col md={6} className="rounded-3">
+        <Col md={6} className="rounded-3 mt-3 mt-sm-0">
           <h5
             className="mx-auto  text-white rounded"
             style={{

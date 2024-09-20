@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
   const [monthlyPlan, setMonthlyPlan] = useState(true);
+  const navigate = useNavigate();
   const plans = [
     {
       name: "Free",
@@ -67,7 +69,7 @@ const Pricing = () => {
     {
       name: "Business",
       price: "$199.99",
-      priceText: "Per month",
+      priceText: "/month",
       button: "Get API Key",
       credits: "5,000",
       features: [
@@ -87,7 +89,8 @@ const Pricing = () => {
     {
       name: "Enterprise",
       price: "Talk to us",
-      button: "Get API Key",
+      button: "Talk to us",
+      link: "/book-a-demo",
       credits: "Custom Volume",
       features: [
         `Custom Volume `,
@@ -108,7 +111,7 @@ const Pricing = () => {
     setMonthlyPlan(!monthlyPlan);
   };
   return (
-    <div className="mt-5 overflow-x-hidden" id="pricing">
+    <div className="mt-5  overflow-x-hidden" id="pricing">
       <h2 className="text-center ">Our Pricing Plans</h2>
       <p className="text-center text-black">
         No long term commitments. One click upgrade/downgrade or cancellation.
@@ -190,6 +193,7 @@ const Pricing = () => {
                   <Button
                     className="text-center w-100 fw-medium border-0"
                     style={{ backgroundColor: "#bf54bd" }}
+                    onClick={() => navigate(plan.link)}
                   >
                     {plan.button}
                   </Button>

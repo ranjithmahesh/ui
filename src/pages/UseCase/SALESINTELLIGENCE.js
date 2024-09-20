@@ -98,14 +98,14 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5  fw-lighter text-white lead "
+                className="mt-5  fw-lighter text-white lead w-100 "
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Stop Wasting Time Doing Lead Enrichment
               </p>
             </div>
             <div className="">
-              <div className="bg-white rounded w-75 p-2 d-flex justify-content-center align-items-center mt-2 shadow-sm">
+              <div className="bg-white rounded   p-2 d-flex justify-content-center align-items-center mt-2 shadow-sm">
                 <input
                   type="text"
                   className="form-control border-0 me-2 w-75"
@@ -117,9 +117,9 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-flex">
             <img
-              className="d-flex ms-auto pe-5  "
+              className="d-flex ms-auto pe-5  img-fluid "
               style={{ objectFit: "contain", width: "99%" }}
               src={heroSec}
               alt="API illustration"
@@ -136,7 +136,7 @@ const data = [
     img: logo1,
     title:
       "Identify Potential Clients, Research Competitors, and Analyze the Market",
-    des: "Leverage domain data for sales intelligence to gain a competitive edge. With WebClazify solutions, partners can identify companies that align with their ideal customer profile and monitor competitors effectively.",
+    des: "Leverage domain data for sales intelligence to gain a competitive edge. With ValidX solutions, partners can identify companies that align with their ideal customer profile and monitor competitors effectively.",
   },
   {
     img: logo2,

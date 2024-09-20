@@ -93,7 +93,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5 fw-lighter text-white lead"
+                className="mt-5 fw-lighter text-white lead w-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Unlock Customer Insights, Enhance Marketing, and Ensure
@@ -113,9 +113,9 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-flex">
             <img
-              className="d-flex ms-auto rounded "
+              className="d-flex ms-auto rounded img-fluid"
               style={{ objectFit: "contain", width: "99%" }}
               src={headerSec}
               alt="Data Enrichment and Analysis Illustration"
@@ -159,7 +159,7 @@ const Body = () => {
               />
               <div>
                 <h5 className="mt-2">{item.title}</h5>
-                <p style={{ fontSize: "14px" }}>{item.des}</p>
+                <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{item.des}</p>
               </div>
             </Col>
           ))}
@@ -173,7 +173,7 @@ const Body = () => {
             />
             <div>
               <h5 className="mt-2">{data[2].title}</h5>
-              <p style={{ fontSize: "14px" }}>{data[2].des}</p>
+              <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{data[2].des}</p>
             </div>
           </Col>
         </Row>

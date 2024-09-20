@@ -92,7 +92,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5 fw-lighter text-white lead"
+                className="mt-5 fw-lighter text-white lead w-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Lead Generation, Market Segmentation, and Market Research
@@ -111,7 +111,7 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-block">
             <img
               className="d-flex ms-auto rounded"
               style={{ objectFit: "contain", width: "99%" }}
@@ -129,12 +129,12 @@ const data = [
   {
     img: logo1,
     title: "Lead Generation",
-    des: "WebClazify can assist in generating leads by extracting essential content information about potential customers from websites.",
+    des: "ValidX can assist in generating leads by extracting essential content information about potential customers from websites.",
   },
   {
     img: logo2,
     title: "Market Segmentation",
-    des: "WebClazify categorizes content from companies and websites based on Domain Input. The content is automatically classified into various categories, including Industry, Headquarters Location, Revenue, Company Employees Range etc.",
+    des: "ValidX categorizes content from companies and websites based on Domain Input. The content is automatically classified into various categories, including Industry, Headquarters Location, Revenue, Company Employees Range etc.",
   },
 ];
 const Body = () => {
@@ -151,7 +151,7 @@ const Body = () => {
               />
               <div>
                 <h5 className="mt-2">{item.title}</h5>
-                <p style={{ fontSize: "14px" }}>{item.des}</p>
+                <p className="d-none d-md-block" style={{ fontSize: "14px" }}>{item.des}</p>
               </div>
             </Col>
           ))}

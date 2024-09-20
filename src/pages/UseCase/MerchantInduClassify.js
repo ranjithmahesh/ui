@@ -26,7 +26,7 @@ function Header() {
   return (
     <div
       id="/"
-      className="  container-fluid"
+      className="  container-fluid "
       style={{
         background: "linear-gradient(to bottom, #420394, #000000)",
         height: "600px",
@@ -95,8 +95,9 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5  fw-lighter text-white lead "
-                style={{ width: "539px", fontSize: "22px" }}
+                className="mt-5 w-100  fw-lighter text-white lead overflow-y-auto "
+                style={{ width: "539px", fontSize: "22px",  scrollbarWidth: "none", // Firefox
+                  msOverflowStyle: "none", }}
               >
                 Accurate merchant industry classification is essential for risk
                 teams, as it allows them to identify prohibited, restricted, or
@@ -119,7 +120,7 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-block">
             <img
               className="d-flex ms-auto pe-5  "
               style={{ objectFit: "contain", width: "99%" }}
@@ -171,7 +172,7 @@ const Body = () => {
     <div className="h-25 ">
       <Container className="mt-4 ">
         <h2 className="text-center ">Merchant Category Code Analysis</h2>
-        <p className="h5 fw-medium text-center">
+        <p className="h5 fw-medium text-center ">
           Automated MCC detection eliminates the need for manual effort and
           guesswork in MCC analysis, thereby speeding up risk decision-making
           and enabling risk teams to more accurately evaluate merchant risk
@@ -179,6 +180,7 @@ const Body = () => {
         </p>
       </Container>
       <div
+      className="d-none d-xl-flex"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -232,12 +234,12 @@ const Body = () => {
 };
 function MerchantIndustryClassification() {
   return (
-    <div>
+    <section >
       <Header />
 
       <Body />
       <Footer />
-    </div>
+    </section>
   );
 }
 

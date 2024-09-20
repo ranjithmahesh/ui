@@ -106,7 +106,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5  fw-lighter text-white lead "
+                className="mt-5  fw-lighter text-white lead  h-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 Domain name data is essential for combating cybercrime by
@@ -128,9 +128,9 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="my-auto">
+          <Col md={6} className="my-auto d-none d-md-flex">
             <img
-              className="d-flex ms-auto rounded  "
+              className="d-flex ms-auto rounded  img-fluid "
               style={{ objectFit: "contain", width: "99%" }}
               src={headerSec}
               alt="API illustration"
@@ -179,7 +179,7 @@ const data = [
   {
     img: logo1,
     title: "Exposing Cybercrime",
-    des: "Reveal the digital footprints left by cybercriminals, including their domains, websites, associated IP addresses, geolocation data, nameservers, and other internet records. Enhance your investigative efforts by uncovering additional insights from properties that share similar DNS infrastructure and characteristics, providing domain data for law enforcement agencies from WebClazify.",
+    des: "Reveal the digital footprints left by cybercriminals, including their domains, websites, associated IP addresses, geolocation data, nameservers, and other internet records. Enhance your investigative efforts by uncovering additional insights from properties that share similar DNS infrastructure and characteristics, providing domain data for law enforcement agencies from ValidX.",
   },
   {
     img: logo2,

@@ -100,7 +100,7 @@ function Header() {
               </h2>
 
               <p
-                className="mt-5  fw-lighter text-white lead "
+                className="mt-5  fw-lighter text-white lead w-100"
                 style={{ width: "539px", fontSize: "22px" }}
               >
                 In today's digital age, conducting business online comes with
@@ -125,7 +125,7 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col md={6} className="">
+          <Col md={6} className=" d-none d-md-flex">
             <img
               className="d-flex ms-auto mt-5 pe-5"
               style={{ objectFit: "contain" }}
@@ -143,7 +143,7 @@ const data = [
     img: logo1,
     title:
       "Identify Potential Clients, Research Competitors, and Analyze the Market",
-    des: "Leverage domain data for sales intelligence to gain a competitive edge. With WebClazify solutions, partners can identify companies that align with their ideal customer profile and monitor competitors effectively.",
+    des: "Leverage domain data for sales intelligence to gain a competitive edge. With ValidX solutions, partners can identify companies that align with their ideal customer profile and monitor competitors effectively.",
   },
   {
     img: logo2,
